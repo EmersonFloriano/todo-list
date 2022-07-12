@@ -1,15 +1,22 @@
 .item {
+  min-height: 4.5rem;
   display: flex;
-  height: 4.5rem;
+  justify-content: space-between;
   padding: 1rem;
   color: var(--gray-300);
   background: var(--gray-500);
   border-radius: 8px;
 }
 
+.item + .item {
+  margin-top: 1rem;
+}
+
 .item span {
+  overflow-wrap: break-word;
+  width: 100%;
+  margin: 0 0.75rem;
   color: var(--gray-100);
-  margin: 0 0.75rem 0 0.75rem;
 }
 
 .check {

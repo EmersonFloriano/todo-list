@@ -74,11 +74,11 @@ function App() {
               {
                 completedCounter != 0 ?
                 ( <div className={style.completedTasks}>
-                  <span>Comcluídas</span>
+                  <span>Concluídas</span>
                   <span>{completedCounter} de {taskList.length}</span>
                 </div> ) :
                 ( <div className={style.completedTasks}>
-                  <span>Comcluídas</span>
+                  <span>Concluídas</span>
                   <span>0</span>
                 </div> )
               }          

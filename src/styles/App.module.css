@@ -1,4 +1,76 @@
+.creater {
+  display: flex;
+  justify-content: center;
+}
+
 .Wrapper {
   margin: 0 auto;
   max-width: 46rem;
+}
+
+.Wrapper main {
+  margin: 0 1rem;
+}
+
+.Wrapper header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  padding-top: 1rem;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.createdTasks span + span {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+.completedTasks {
+  color: var(--purple);
+}
+
+.completedTasks span + span {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 12px;
+  background: var(--gray-400);
+  color: var(--gray-200);
+  font-size: 0.9rem;
+}
+
+.empityList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  max-width: 46rem;
+  border-top: 2px solid var(--gray-400);
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+.empityList svg {
+  max-height: 3.5rem;
+  max-width: 3.5rem;
+}
+
+.empityList :nth-child(2) {
+  padding-top: 1rem;
+  color: var(--gray-300);
+  font-weight: bold;
+}
+
+.empityList span + span {
+  color: var(--gray-300);
 }

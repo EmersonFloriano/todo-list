@@ -1,7 +1,6 @@
 .item {
   min-height: 4.5rem;
   display: flex;
-  justify-content: space-between;
   padding: 1rem;
   color: var(--gray-300);
   background: var(--gray-500);
@@ -13,23 +12,44 @@
 }
 
 .item span {
-  overflow-wrap: break-word;
   width: 100%;
+  max-width: calc(100% - 4.5rem);
+  overflow-wrap: break-word;
   margin: 0 0.75rem;
   color: var(--gray-100);
+}
+
+.item s {
+  color: var(--gray-300);
+}
+
+.item button {
+  height: 24px;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .check {
   color: var(--blue);
 }
 
-.trash {
+.checkedTask {
+  color: var(--purple-dark);
+}
+
+.checkedTask:hover {
+  color: var(--purple);
+}
+
+.trash :first-child {
   color: var(--gray-300);
   transition-duration: 0.2s;
 }
 
-.trash:hover {
-  background: var(--gray-400);
+.trash :first-child:hover {
   border-radius: 4px;
+  background: var(--gray-400);
   color: var(--danger);
 }

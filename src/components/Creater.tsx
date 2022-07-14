@@ -27,8 +27,10 @@ export function Creater({ onCreateNewTask }: CreaterProps) {
         onChange={handleNewTaskChange}
       ></textarea>
       <button onClick={handleCreateNewTask}>
-        <span>Criar</span>
-        {/* <PlusCircle size={18} /> */}
+        <div>
+          <span>Criar</span>
+          <PlusCircle size={20} />
+        </div>
       </button>
     </div>
   );

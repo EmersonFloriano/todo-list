@@ -1,5 +1,7 @@
 # About
 
+Site visible at: https://emersonfloriano.github.io/todo-list/
+
 A simple web application to list and manage tasks.
 
 To create this application, I used basic React concepts, such as: properties, components, state and Hooks.
